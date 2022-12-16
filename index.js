@@ -87,21 +87,22 @@ var finances = [
 ['Feb-2017', 671099]
 ];
 
+console.log(`Financial Analysis`)
+console.log(`------------------`)
+
 // The total number of months included in the dataset
 console.log(`Total Months: ${finances.length}`);
 
-// prints all element of column 2 from array finance, into new array
-var profitLosses = finances.map(d => d[1]);
-/* 
-console.log(`All profits and losses: ${profitLosses}`); 
-*/
 
-// The net total amount of Profit/Losses over the entire period.
-var total = 0;
-for(i = 0; i < profitLosses.length; i++) {
-    total += profitLosses[i]
+// The net total amount of Profit/Losses over the entire period
+let total = 0;
+for (let i = 0; i < finances.length; i++) {
+    total += finances[i][1];
 }
 console.log(`Total: $${total}`);
+
+
+
 
 // The average of the changes in Profit/Losses over the entire period.
 // calculate each change by subtracting the previous month from this month
@@ -118,15 +119,3 @@ console.log(`Total: $${total}`);
 
 
 // The greatest decrease in losses (date and amount) over the entire period.
-
-
-
-
-// console output format!
-// Financial Analysis
-// ----------------------------
-// Total Months: 25
-// Total: $2561231
-// Average  Change: $-2315.12
-// Greatest Increase in Profits: Feb-2012 ($1926159)
-// Greatest Decrease in Profits: Sep-2013 ($-2196167)
