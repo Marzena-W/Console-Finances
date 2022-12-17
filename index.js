@@ -102,14 +102,14 @@ for (let i = 0; i < finances.length; i++) {
 console.log(`Total: $${total}`);
 
 
+// The average of the changes in Profit/Losses over the entire period
+let totalChange = 0;
+for (let i = 0; i < finances.length-1; i=(i+1)) {
+    totalChange += (finances[i+1][1] - finances[i][1]);
+}
+console.log(`Total: $${totalChange/85}`);
 
-
-// The average of the changes in Profit/Losses over the entire period.
-// calculate each change by subtracting the previous month from this month
-// You will need to track what the total change in profits is from month to month and then find the average.
-// (Total/total number of changes) ===> total change/(months - 1)
-// maybe put all the changes into an array? using .push(...) ?
-
+console.log(`------------------------------------------------`)
 
 
 // The greatest increase in profits (date and amount) over the entire period.
