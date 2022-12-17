@@ -103,15 +103,17 @@ console.log(`Total: $${total}`);
 
 
 // The average of the changes in Profit/Losses over the entire period
-let totalChange = 0;
-for (let i = 0; i < finances.length-1; i=(i+1)) {
-    totalChange += (finances[i+1][1] - finances[i][1]);
+let totalSum = 0;
+for (let i = 0; i < finances.length-1; i++) {
+    totalSum += (finances[i+1][1] - finances[i][1]);
 }
-console.log(`Total: $${totalChange/85}`);
+let totalChange = totalSum/85;
+let resoult = totalChange.toFixed(2);
+console.log(`Average change: $${resoult}`);
+
+
 
 console.log(`------------------------------------------------`)
-
-
 // The greatest increase in profits (date and amount) over the entire period.
 // start with 0
 //   check the last increase. If it's bigger than 0, keep track of the new biggest one.
