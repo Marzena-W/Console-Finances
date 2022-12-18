@@ -87,24 +87,52 @@ var finances = [
 ['Feb-2017', 671099]
 ];
 
+
 console.log(`Financial Analysis`)
 console.log(`------------------`)
+
 
 // The total number of months included in the dataset
 console.log(`Total Months: ${finances.length}`);
 
 
 // The net total amount of Profit/Losses over the entire period
-let total = 0;
+var total = 0;
 for (let i = 0; i < finances.length; i++) {
     total += finances[i][1];
 }
 console.log(`Total: $${total}`);
 
+
 // The average of the changes in Profit/Losses over the entire period
-let totalSum = 0;
-for (let i = 0; i < finances.length-1; i++) {
+var totalSum = 0;
+for (var i = 0; i < finances.length-1; i++) {
     totalSum += (finances[i+1][1] - finances[i][1]);
 }
-let totalChange = totalSum/(finances.length-1);
+
+var totalChange = totalSum/(finances.length-1);
 console.log(`Average change: $${totalChange.toFixed(2)}`);
+
+
+// The greatest increase and decrease in profits (date and amount) over the entire period.
+
+        // creating a new array with all differences
+var diffrences = [];
+    for (var i = 0; i < finances.length-1; i++) {
+        current = (finances[i+1][1] - finances[i][1]);
+           diffrences.push({month: finances[i+1][0], current});
+        }
+
+        // The greatest increase in profits (date and amount) over the entire period.
+        diffrences = diffrences.sort(function(a,b){
+            return(b.current-a.current);
+        })
+        max = diffrences[0].month + " " + diffrences[0].current;
+        console.log(`Greatest increase in profits: ${max}`);
+
+        // The greatest decrease in profits (date and amount) over the entire period
+        diffrences=diffrences.sort(function(a,b){
+            return(a.current-b.current);
+        })
+        min = diffrences[0].month + " " + diffrences[0].current;
+        console.log(`Greatest decrease in profits: ${min}`);
