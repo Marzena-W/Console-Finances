@@ -16,7 +16,7 @@ To access the solution open the below link to deployed application.
 ## Credits
 
 * For more information about javascript
-W3 - [https://www.w3schools.com/jsref/jsref_tofixed.asp]
+W3 - [https://www.w3schools.com/js/default.asp]
 * To see website updates while making changes to the code
 Live Server - [https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer]
 * Codecademy - [https://www.codecademy.com/resources/docs/javascript]
