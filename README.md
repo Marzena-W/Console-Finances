@@ -22,6 +22,7 @@ Live Server - [https://marketplace.visualstudio.com/items?itemName=ritwickdey.Li
 * Codecademy - [https://www.codecademy.com/resources/docs/javascript]
 * For stackoverflow - [https://stackoverflow.com/]
 * Info how to round the number - [https://bobbyhadz.com/blog/javascript-round-number-to-two-decimal-places]
+* For sort function - [https://www.w3schools.com/jsref/jsref_sort.asp]
 
 
 ## License
