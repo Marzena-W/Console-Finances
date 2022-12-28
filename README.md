@@ -1,7 +1,7 @@
 # challenge4-Console-Finances
 
 ## Description 
-> In challenge 4 I created a code to analyse the financial records where I practised basics of JavaScript. I learned toFixed and got familiarised with sort function.
+> In challenge 4 I created a code to analyse the financial records where I practised basics of JavaScript. I learned toFixed and got familiarised with sort function and objects.
 
 
 ## Usage 
@@ -15,14 +15,12 @@ To access the solution open the below link to deployed application.
 
 ## Credits
 
-* For more information about javascript
-W3 - [https://www.w3schools.com/js/default.asp]
-* To see website updates while making changes to the code
-Live Server - [https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer]
-* Codecademy - [https://www.codecademy.com/resources/docs/javascript]
-* For stackoverflow - [https://stackoverflow.com/]
 * Info how to round the number - [https://bobbyhadz.com/blog/javascript-round-number-to-two-decimal-places]
 * For sort function - [https://www.w3schools.com/jsref/jsref_sort.asp]
+* Codecademy - [https://www.codecademy.com/resources/docs/javascript]
+* Stackoverflow - [https://stackoverflow.com/]
+* For more information about javascript - W3 - [https://www.w3schools.com/js/default.asp]
+* To see website updates - Live Server - [https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer]
 
 
 ## License

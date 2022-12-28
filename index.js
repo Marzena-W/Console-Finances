@@ -127,12 +127,12 @@ var diffrences = [];
         diffrences = diffrences.sort(function(a,b){
             return(b.current-a.current);
         })
-        max = diffrences[0].month + " " + diffrences[0].current;
+        max = "$" + diffrences[0].current + " " + diffrences[0].month;
         console.log(`Greatest increase in profits: ${max}`);
 
         // The greatest decrease in profits (date and amount) over the entire period
         diffrences=diffrences.sort(function(a,b){
             return(a.current-b.current);
         })
-        min = diffrences[0].month + " " + diffrences[0].current;
+        min = "$" + diffrences[0].current + " " + diffrences[0].month;
         console.log(`Greatest decrease in profits: ${min}`);
