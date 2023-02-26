@@ -6,7 +6,7 @@
 
 ## Usage 
 To access the solution open the below link to deployed application.
-* Deployed application - [https://marzena-w.github.io/challenge4-Console-Finances/]
+* Deployed application - [https://marzena-w.github.io/Console-Finances/]
 * Right-click -> Inspect
 * Go to console
 * Screenshot of the challenge4:
