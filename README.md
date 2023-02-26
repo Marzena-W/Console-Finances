@@ -1,4 +1,4 @@
-# challenge4-Console-Finances
+# Console-Finances
 
 ## Description 
 > In challenge 4 I created a code to analyse the financial records where I practised basics of JavaScript. I learned toFixed and got familiarised with sort function and objects.
